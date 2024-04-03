@@ -1,0 +1,117 @@
+/* App.css */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; /* Cambiar para alinear el contenido arriba */
+  padding-top: 5%; /* Ajustar el espacio en la parte superior */
+  height: 100vh;
+  background-color: #ffffff; /* Fondo blanco */
+}
+
+.logo-container {
+  margin-bottom: 2rem; /* Espacio entre el logo y el formulario */
+}
+
+.logo {
+  height: 150px; /* Ajustar el tamaño del logo */
+  margin-bottom: 1rem; /* Ajustar la separación del logo */
+}
+
+.form-container {
+  text-align: center;
+}
+
+.input-field {
+  width: 350px; /* Ajustar el ancho de los campos de texto */
+  height: 40px; /* Ajustar la altura de los campos de texto */
+  margin-bottom: 1rem; /* Ajustar la separación entre campos de texto */
+  border: 2px solid #000000; /* Borde negro */
+  border-radius: 8px; /* Bordes redondeados */
+  padding: 0.5rem; /* Espaciado interno */
+  font-size: 1.1rem; /* Tamaño de la fuente */
+  color: #000000; /* Color del texto negro */
+  background-color: #ffffff; /* Fondo blanco */
+}
+
+.password-input {
+  position: relative; /* Posición relativa para el icono de mostrar/ocultar contraseña */
+
+}
+
+.password-toggle {
+  position: absolute;
+  top: 40%; /* Ajustar la posición vertical */
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 1.1rem; /* Tamaño de la fuente */
+  color: #000000; /* Color del texto negro */
+  padding: 0.5rem 0; /* Espaciado interno, ajustado verticalmente */
+  right: 10px; /* Ajustar la posición horizontal */
+}
+
+
+.checkbox-label {
+  position: relative;
+  display: inline-block;
+  margin-top: 1rem; /* Ajustar la separación del checkbox */
+}
+
+.checkbox-custom {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px; /* Ancho del checkbox */
+  height: 20px; /* Altura del checkbox */
+  background-color: #ffffff; /* Fondo del checkbox */
+  border: 2px solid #000000; /* Borde del checkbox */
+  border-radius: 3px; /* Bordes redondeados */
+}
+
+.checkbox-label input {
+  visibility: hidden; /* Ocultar el checkbox predeterminado */
+}
+
+.checkbox-custom::after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.checkbox-label input:checked ~ .checkbox-custom::after {
+  display: block;
+}
+
+.checkbox-custom::after {
+  content: "";
+  position: absolute;
+  top: 6px; /* Ajustar la posición del chequeo dentro del cuadro */
+  left: 4px; /* Ajustar la posición del chequeo dentro del cuadro */
+  width: 6px; /* Ancho del chequeo */
+  height: 12px; /* Altura del chequeo */
+  border: solid #000000; /* Color del chequeo */
+  border-width: 0 2px 2px 0; /* Estilo del chequeo */
+  transform: rotate(45deg); /* Rotar el chequeo */
+}
+
+.button {
+  width: 300px; /* Ajustar el ancho del botón */
+  height: 50px; /* Ajustar la altura del botón */
+  margin-top: 0.2rem; /* Ajustar la separación del botón */
+  border: 2px solid #000000; /* Borde negro */
+  border-radius: 8px; /* Bordes redondeados */
+  background-color: #006400; /* Color verde oscuro */
+  color: #ffffff; /* Color del texto blanco */
+  font-size: 1.2rem; /* Tamaño de la fuente */
+  cursor: pointer;
+}
+
+
+.button:hover {
+  background-color: #004d00; /* Cambiar el color al pasar el ratón */
+}
+
+/* Agregar regla para el texto "Iniciar Sesión" */
+h2 {
+  color: #000000; /* Color del texto negro */
+}
